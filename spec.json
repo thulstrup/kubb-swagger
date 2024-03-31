@@ -1,0 +1,71 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Elysia Documentation",
+    "description": "Development documentation",
+    "version": "0.0.0"
+  },
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "getIndex",
+        "responses": {
+          "200": {}
+        }
+      },
+      "post": {
+        "parameters": [],
+        "operationId": "postIndex",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "offset": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "offset"
+                ]
+              }
+            },
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "offset": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "offset"
+                ]
+              }
+            },
+            "text/plain": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "offset": {
+                    "type": "number"
+                  }
+                },
+                "required": [
+                  "offset"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {}
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {}
+  }
+}
